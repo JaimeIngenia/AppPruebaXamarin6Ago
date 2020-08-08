@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using Datachart = Microcharts.ChartEntry;
 
 
 namespace AppInternet
@@ -14,20 +15,36 @@ namespace AppInternet
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
+        List<WSResult> d;
         public MainPage()
         {
             InitializeComponent();
         }
+
         private async void BtnCallWS_Click(object sender, EventArgs e)
         {
             WSClient client = new WSClient();
-            var result = await client.Get<WSResult>("https://jsonplaceholder.typicode.com/posts/1");
-            if (result != null)
+            List<Datachart> datachartList = new List<Datachart>();
+            d = await client.Get<WSResult>("https://gensyslabs.net/listado3.php");
+            foreach (var item in d)
             {
-                lblId.Text = $"{result.id}";
-                lblTitle.Text = result.title;
-                lblBody.Text = result.body;
+                Datachart x = new Datachart(float.Parse(item.corriente))
+                {
+                    Color = SkiaSharp.SKColor.Parse("#ff92a0"),
+                    TextColor = SkiaSharp.SKColor.Parse("#ff92a0"),
+                    Label = item.tiempo,
+                   
+                    ValueLabel = item.tiempo
+                };
+
+                datachartList.Add(x);
+
             }
+            Grafica1.Chart = new Microcharts.LineChart()
+            {
+                Entries = datachartList
+
+            };
         }
     }
 }

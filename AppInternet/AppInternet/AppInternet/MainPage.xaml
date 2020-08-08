@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:Microcharts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
              mc:Ignorable="d"
              x:Class="AppInternet.MainPage">
 
@@ -13,18 +14,7 @@
                     TextColor="White" 
                     BorderRadius="20"/>
 
-        <BoxView HorizontalOptions="FillAndExpand" HeightRequest="2" Color="Silver"/>
-        <Label  Text   = "ID:"  
-                           TextColor="#71d349"/>
-        <Label  x:Name = "lblId"/>
-
-        <Label  Text   = "Title:"  
-                           TextColor="#71d349" />
-        <Label  x:Name = "lblTitle"/>
-
-        <Label  Text   = "Body:"  
-                           TextColor="#71d349"/>
-        <Label  x:Name = "lblBody"/>
+        <Microcharts:ChartView x:Name="Grafica1" HeightRequest="500" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
 
     </StackLayout>
 

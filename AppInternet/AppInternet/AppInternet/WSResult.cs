@@ -6,9 +6,9 @@ namespace AppInternet
 {
     public class WSResult
     {
-        public int userId { get; set; }
-        public int id { get; set; }
-        public string title { get; set; }
-        public string body { get; set; }
+        public string corriente { get; set; }
+        public string tiempo { get; set; }
+
+
     }
 }

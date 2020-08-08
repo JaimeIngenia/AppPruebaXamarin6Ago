@@ -7,8 +7,8 @@ C:\Users\Jaime\source\repos\AppInternet\AppInternet\AppInternet\obj\Debug\netsta
 C:\Users\Jaime\source\repos\AppInternet\AppInternet\AppInternet\obj\Debug\netstandard2.0\AppInternet.AssemblyInfo.cs
 C:\Users\Jaime\source\repos\AppInternet\AppInternet\AppInternet\bin\Debug\netstandard2.0\ref\AppInternet.dll
 C:\Users\Jaime\source\repos\AppInternet\AppInternet\AppInternet\bin\Debug\netstandard2.0\AppInternet.pdb
-C:\Users\Jaime\source\repos\AppInternet\AppInternet\AppInternet\obj\Debug\netstandard2.0\AppInternet.csproj.CoreCompileInputs.cache
-C:\Users\Jaime\source\repos\AppInternet\AppInternet\AppInternet\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\Jaime\source\repos\AppInternet\AppInternet\AppInternet\obj\Debug\netstandard2.0\AppInternet.dll
 C:\Users\Jaime\source\repos\AppInternet\AppInternet\AppInternet\obj\Debug\netstandard2.0\ref\AppInternet.dll
 C:\Users\Jaime\source\repos\AppInternet\AppInternet\AppInternet\obj\Debug\netstandard2.0\AppInternet.pdb
+C:\Users\Jaime\source\repos\AppInternet\AppInternet\AppInternet\obj\Debug\netstandard2.0\AppInternet.csproj.CoreCompileInputs.cache
+C:\Users\Jaime\source\repos\AppInternet\AppInternet\AppInternet\obj\Debug\netstandard2.0\XamlC.stamp
